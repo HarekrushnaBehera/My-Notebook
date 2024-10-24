@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.note_page {
+	height: 90vh;
+	padding-left: 0px;
+}
+
+.col-md-12 {
+	padding-left: 0px;
+	width: 100%;
+}
+
+.card {
+	width: 100%;
+}
+
+.nav-pills {
+	margin: 10px;
+	gap: 7px;
+}
+
+.mynav .nav-link {
+	text-align: center;
+	background-color: white;
+	color: blue;
+}
+
+.card .icon {
+	display: flex;
+	align-items: center;
+	padding: 19px 23px;
+	gap: 27px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
