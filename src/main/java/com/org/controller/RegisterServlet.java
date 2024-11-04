@@ -33,7 +33,7 @@ public class RegisterServlet extends HttpServlet {
 		dao.saveUser(user);
 		
 		HttpSession session = req.getSession();
-		session.setAttribute("msg", "Registered Successfully");
+		session.setAttribute("smsg", "Registered Successfully");
 		res.sendRedirect("login.jsp");
 	}
 }

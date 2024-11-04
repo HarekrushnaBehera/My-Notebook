@@ -15,17 +15,25 @@
 				<div class="shadow p-3 mb-5 bg-body rounded car paint-card">
 					<div class="card-body">
 						<p class="fs-4 text-center">User Login</p>
+						<% String str = (String) session.getAttribute("fail");
+						if (str != null) {%>
+							<div class="alert alert-danger py-2" role="alert"><%= str %></div>
+						<% }
+						 session.removeAttribute("fail"); %>
 						<form action="login" method="post">
 							<div class="mb-2">
-								<label class="form-label">Email Address</label> <input
-									name="email" type="email" class="form-control" required>
+								<label class="form-label">Email Address</label>
+								<input name="email" type="email" class="form-control" required>
 							</div>
 							<div class="mb-2">
-								<label class="form-label">Password</label> <input
-									name="password" type="password" class="form-control" required>
+								<label class="form-label">Password</label>
+								<input name="password" type="password" class="form-control" required>
 							</div>
-							<button type="submit"
-								class="btn bg-secondary text-white col-md-12">Login</button>
+							<button type="submit" class="btn bg-secondary text-white col-md-12">Login</button>
+							<div class="mt-2 text-center">
+								<span>Don't have an account ?</span>
+								<a href="login.jsp">register here</a>
+							</div>
 						</form>
 					</div>
 				</div>
